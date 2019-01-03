@@ -36,5 +36,26 @@ gulp.task('styles', function () {
       .pipe(gulp.dest('dist/css'))
 });
 
+// Image compresor
+gulp.task('imagemin', function () {
+    gulp.src('img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'));
+});
+
 // Clean my dist folder
 gulp.task('clean', () => del(['dist']));
+
+// Watch to 
+gulp.task('watch', function(){    
+    gulp.watch('src/scss/**/*.scss', ['styles']);
+    gulp.watch('img/**/*', ['imagemin']);
+});
+
+
+gulp.task('default', ['clean'], function () {
+    runSequence(
+      'styles',
+      'imagemin'
+    );
+});
