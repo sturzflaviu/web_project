@@ -17,9 +17,17 @@
   },
   "homepage": "https://github.com/sturzflaviu/web_project#readme",
   "dependencies": {
+    "del": "^3.0.0",
     "gulp-cli": "^2.0.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "run-sequence": "^2.2.1"
   }
 }
