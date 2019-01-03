@@ -35,3 +35,6 @@ gulp.task('styles', function () {
       // Output
       .pipe(gulp.dest('dist/css'))
 });
+
+// Clean my dist folder
+gulp.task('clean', () => del(['dist']));
