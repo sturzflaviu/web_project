@@ -1,0 +1,25 @@
+{
+  "name": "web_project",
+  "version": "1.0.0",
+  "description": "1. Make sure to have installed Node.js\r 2. Go to your project and type 'npm init' to install npm package\r 3. Type 'npm install gulp-cli' to install gulp in your command line on your project\r 4. Type 'npm install gulp --save-dev' to install gulp \r 5. Create a file named: 'gulpfile.js'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sturzflaviu/web_project.git"
+  },
+  "author": "Sturz Flaviu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sturzflaviu/web_project/issues"
+  },
+  "homepage": "https://github.com/sturzflaviu/web_project#readme",
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
